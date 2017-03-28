@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
-body {
+body,html {
   background: #2c3e50;
   font-family: 'Open Sans', sans-serif;
 }
@@ -15,7 +15,7 @@ body {
 
   h1 {
     margin: 0;
-    color: #8e44ad;
+    color: #3f51b5;
   }
 
   .input-wrap {
@@ -24,7 +24,7 @@ body {
     margin-top: 25px;
 
     label {
-      color: #9b59b6;
+      color: #3f51b5;
       display: block;
       position: absolute;
       //top: 0px;
@@ -35,19 +35,8 @@ body {
       cursor: text;
     }
 
-    input {
-      line-height: 20px;
-      display: block;
+    md-input-container {
       width: 100%;
-      outline: none;
-
-      &:focus {
-        outline: none !important;
-        & + label {
-          top: -25px;
-          font-size: 16px;
-        }
-      }
     }
   }
 }
@@ -86,21 +75,20 @@ body {
   }
 }
 
-.badge.ng-move,
-.badge.ng-enter,
-.badge.ng-leave {
-  -webkit-transition:all linear 0.5s;
-  transition:all linear 0.5s;
+.loading {
+  width: 100%;
+  max-width: 36%;
+  margin: 40px auto 0;
+
+  md-progress-circular {
+    margin: 0 auto;
+
+    path {
+      stroke: #fff;
+    }
+  }
 }
 
-.badge.ng-leave.ng-leave-active,
-.badge.ng-move,
-.badge.ng-enter {
-  opacity:0;
-}
-
-.badge.ng-leave,
-.badge.ng-move.ng-move-active,
-.badge.ng-enter.ng-enter-active {
-  opacity:1;
+.error {
+  color: #ff0000;
 }

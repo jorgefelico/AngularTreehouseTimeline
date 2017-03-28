@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
-body {
+body, html {
   background: #2c3e50;
   font-family: 'Open Sans', sans-serif; }
 
@@ -12,13 +12,13 @@ body {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); }
   .profile-input h1 {
     margin: 0;
-    color: #8e44ad; }
+    color: #3f51b5; }
   .profile-input .input-wrap {
     position: relative;
     width: 100%;
     margin-top: 25px; }
     .profile-input .input-wrap label {
-      color: #9b59b6;
+      color: #3f51b5;
       display: block;
       position: absolute;
       top: -25px;
@@ -26,16 +26,8 @@ body {
       width: 100%;
       transition: all 0.2s;
       cursor: text; }
-    .profile-input .input-wrap input {
-      line-height: 20px;
-      display: block;
-      width: 100%;
-      outline: none; }
-      .profile-input .input-wrap input:focus {
-        outline: none !important; }
-        .profile-input .input-wrap input:focus + label {
-          top: -25px;
-          font-size: 16px; }
+    .profile-input .input-wrap md-input-container {
+      width: 100%; }
 
 .profile-view {
   width: 50%;
@@ -59,18 +51,14 @@ body {
         font-size: 12px;
         text-align: center; }
 
-.badge.ng-move,
-.badge.ng-enter,
-.badge.ng-leave {
-  -webkit-transition: all linear 0.5s;
-  transition: all linear 0.5s; }
+.loading {
+  width: 100%;
+  max-width: 36%;
+  margin: 40px auto 0; }
+  .loading md-progress-circular {
+    margin: 0 auto; }
+    .loading md-progress-circular path {
+      stroke: #fff; }
 
-.badge.ng-leave.ng-leave-active,
-.badge.ng-move,
-.badge.ng-enter {
-  opacity: 0; }
-
-.badge.ng-leave,
-.badge.ng-move.ng-move-active,
-.badge.ng-enter.ng-enter-active {
-  opacity: 1; }
+.error {
+  color: #ff0000; }

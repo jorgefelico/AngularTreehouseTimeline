@@ -1,8 +1,11 @@
 <div class="profile-input">
   <h1>Treehouse Timeline</h1>
   <div class="input-wrap">
-    <input name="username" id="username" class="username" ng-model="username" value="{{username}}">
-    <label for="username">Enter Username</label>
+    <md-input-container>
+      <label>Treehouse Username</label>
+      <input ng-model="username">
+        <p class="error" ng-if="showError">User could not be found.</p>
+    </md-input-container>
   </div>
-  <button class="submit-button" ng-click="getProfile()">Submit</button>
+  <md-button class="md-raised md-primary" ng-click="getProfile()"> Submit </md-button>
 </div>
