@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+body {
+  background: #2c3e50;
+  font-family: 'Open Sans', sans-serif; }
+
+.profile-input {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 50px;
+  width: 30%;
+  margin: 50px auto 0;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); }
+  .profile-input h1 {
+    margin: 0;
+    color: #8e44ad; }
+  .profile-input .input-wrap {
+    position: relative;
+    width: 100%;
+    margin-top: 25px; }
+    .profile-input .input-wrap label {
+      color: #9b59b6;
+      display: block;
+      position: absolute;
+      top: -25px;
+      left: 5px;
+      width: 100%;
+      transition: all 0.2s;
+      cursor: text; }
+    .profile-input .input-wrap input {
+      line-height: 20px;
+      display: block;
+      width: 100%;
+      outline: none; }
+      .profile-input .input-wrap input:focus {
+        outline: none !important; }
+        .profile-input .input-wrap input:focus + label {
+          top: -25px;
+          font-size: 16px; }
+
+.profile-view {
+  width: 50%;
+  margin: 0 auto; }
+  .profile-view h2 {
+    color: #fff; }
+  .profile-view .badges {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0; }
+    .profile-view .badges li {
+      width: 15%;
+      margin: 20px; }
+      .profile-view .badges li img {
+        width: 100%; }
+      .profile-view .badges li .badge-data {
+        color: #fff;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: center; }
+
+.badge.ng-move,
+.badge.ng-enter,
+.badge.ng-leave {
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s; }
+
+.badge.ng-leave.ng-leave-active,
+.badge.ng-move,
+.badge.ng-enter {
+  opacity: 0; }
+
+.badge.ng-leave,
+.badge.ng-move.ng-move-active,
+.badge.ng-enter.ng-enter-active {
+  opacity: 1; }

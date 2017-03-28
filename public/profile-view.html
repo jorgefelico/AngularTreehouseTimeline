@@ -1,0 +1,18 @@
+<div class="profile-view">
+<h2>Badges Earned</h2>
+<ul class="badges">
+  <li class="badge" ng-repeat="badge in profileData.badges">
+      <img src="{{badge.icon_url}}" alt="">
+      <div class="badge-data">
+        <span>{{badge.name}}</span>
+      </div>
+  </div>
+
+  </li>
+</ul>
+
+
+<!-- <ul class="points">
+  <li ng-repeat="(key, point) in profileData.points">{{key}}: {{point}}</li>
+</ul> -->
+</div>
